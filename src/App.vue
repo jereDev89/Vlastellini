@@ -484,14 +484,14 @@ import { Hooper, // slider -- https://github.com/baianat/hooper
         Navigation as HooperNavigation } from 'hooper';
 import 'hooper/dist/hooper.css'; // slider css
 
+//import { Slide } from 'vue-burger-menu'
+
  export default {
     name: 'App',
     components: {
         Hooper,
         Slide,
-        HooperProgress,
         HooperPagination,
-        HooperNavigation
     },
     data () {
       return {
@@ -510,6 +510,7 @@ import 'hooper/dist/hooper.css'; // slider css
     }
   }
 AOS.init();
+
 </script>
 
 <style>
@@ -542,6 +543,9 @@ time, mark, audio, video {
     flex-direction: column;
 }
 /* Osnovni css za body, naslove, liste, paragraf*/
+html {
+    scroll-behavior: smooth;
+}
 body{
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 14px;
