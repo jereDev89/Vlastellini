@@ -484,7 +484,7 @@ import { Hooper, // slider -- https://github.com/baianat/hooper
         Navigation as HooperNavigation } from 'hooper';
 import 'hooper/dist/hooper.css'; // slider css
 
-//import { Slide } from 'vue-burger-menu'
+import { Hamburger } from 'vue-burger-menu';
 
  export default {
     name: 'App',
@@ -492,6 +492,7 @@ import 'hooper/dist/hooper.css'; // slider css
         Hooper,
         Slide,
         HooperPagination,
+        Hamburger,
     },
     data () {
       return {
@@ -510,7 +511,6 @@ import 'hooper/dist/hooper.css'; // slider css
     }
   }
 AOS.init();
-
 </script>
 
 <style>
